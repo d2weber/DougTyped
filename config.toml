@@ -1,6 +1,10 @@
 # The URL the site will be built for
 base_url = "https://d2weber.github.io/DougTyped"
 
+# The site title and description; used in feeds by default.
+title = "DougTyped"
+description = "A space for all kinds of things."
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
