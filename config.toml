@@ -1,0 +1,59 @@
+# The URL the site will be built for
+base_url = "https://d2weber.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "DeepThought"
+
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10 },
+    { name = "tags", fees = true, paginate_by = 10 },
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+navbar_items = [
+ { code = "en", nav_items = [
+  { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/posts", name = "Posts" },
+  { url = "$BASE_URL/tags", name = "Tags" },
+  { url = "$BASE_URL/categories", name = "Categories" },
+ ]},
+]
+
+# Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
+[extra.favicon]
+
+# Author details
+[extra.author]
+name = "Douglas"
+avatar = "/images/avatar.png"
+
+# Social links
+[extra.social]
+email = "29163905+d2weber@users.noreply.github.com"
+github = "d2weber"
+gitlab = "d2weber"
+linkedin = "douglas-weber"
+stackoverflow = "8958388"
+
+
+# To add google analytics
+#[extra.analytics]
+#google = "<your_gtag>"
+
+# To add disqus comments
+#[extra.commenting]
+#disqus = "<your_disqus_shortname>"
+
+# To enable mapbox maps
+#[extra.mapbox]
+#access_token = "<your_access_token>"
