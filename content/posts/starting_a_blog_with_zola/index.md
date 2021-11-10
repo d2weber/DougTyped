@@ -126,8 +126,7 @@ Now we are done and can serve our website:
     zola serve
 
 Open the browser on the address specified by the output of the command
-(something like [http://127.0.0.1:1111](http://127.0.0.1:1111)) and you should
-see this:
+(something like <http://127.0.0.1:1111> and you should see this:
 
 ![Screenshot](zola-website-screenshot.png)
 
