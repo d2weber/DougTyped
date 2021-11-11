@@ -1,6 +1,6 @@
 +++
 title="Starting a blog with Zola"
-date=2021-11-20
+date=2021-11-10
 
 [taxonomies]
 categories = ["Project"]
