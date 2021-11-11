@@ -26,7 +26,7 @@ main difference here is, that you basically write your content on a local
 machine, then you run a program which generates the website from that content.
 When the content lives in a repo on GitHub, continuous integration and [GitHub
 Pages](https://pages.github.com/) simplify the publishing workflow of your
-webiste.
+website.
 
 
 |                         | WordPress                  | Static site generator |
@@ -40,7 +40,7 @@ Markdown is a big plus for me. The most established framework is
 [Jekyll](https://jekyllrb.com/). Since I am curious on what existed in the
 [Rust](https://www.rust-lang.org/) world and found two projects:
 [Coblat](https://cobalt-org.github.io/) and [Zola](https://www.getzola.org/).
-To have a good-looking website rigth from the beginning it is nice to have some
+To have a good-looking website right from the beginning it is nice to have some
 predefined theming options available. I couldn't find a way to easily theme
 Cobalt, so I choose Zola.  There are plenty of options in their
 [showcase](https://www.getzola.org/themes/).
@@ -90,7 +90,7 @@ We need to make the following changes:
       ]
 
 * Add a minimal amount of configuration to the extras section to make the
-  website work with our theme. Put this codeblock after `[extras]`:
+  website work with our theme. Put this code block after `[extras]`:
 
       navbar_items = [
           { code = "en", nav_items = [
@@ -130,7 +130,7 @@ Open the browser on the address specified by the output of the command
 
 ![Screenshot](zola-website-screenshot.png)
 
-Concratulations! Feel free to adjust your configuration and add some more
+Congratulations! Feel free to adjust your configuration and add some more
 content. You can use `content/posts/post-0.md` as a starting point. The [Zola
 Docs](https://www.getzola.org/documentation/) contain a lot of useful
 information. Enjoy!
