@@ -28,12 +28,14 @@ When the content lives in a repo on GitHub, continuous integration and [GitHub
 Pages](https://pages.github.com/) simplify the publishing workflow of your
 website.
 
+ <div style="overflow-x:auto;">
 
 |                         | WordPress                  | Static site generator |
 |                         |                            |                       |
 | **Setup**               | Very easy on WordPress.com | More work necessary   |
 | **Editing**             | Through web interface      | Markdown files        |
 | **Server-Capabilities** | Database and PHP necessary | Only static files     |
+</div>
 
 The free hosting on GitHub Pages without advertisement and writing content in
 Markdown is a big plus for me. The most established framework is
