@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  
+  
+  
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet" />
+  <link href="https://d2weber.github.io/DougTyped/deep-thought.css" rel="stylesheet" />
+
+  <title>
+    
+DougTyped | Starting a blog with Zola
+
+  </title>
+
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped">DougTyped</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped&#x2F;categories">
+            Categories
+          </a>
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Starting a blog with Zola
+          </h1>
+          <p class="subtitle"></p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Douglas published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2021-11-10">November 10, 2021</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>4 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>697 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://d2weber.github.io/DougTyped/categories/project/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Project</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://d2weber.github.io/DougTyped/tags/zola/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>zola</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://d2weber.github.io/DougTyped/tags/blog/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>blog</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://d2weber.github.io/DougTyped/tags/markdown/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>markdown</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://d2weber.github.io/DougTyped/tags/rust/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>rust</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>A blog is a great way to reflect on thoughts and to get in touch with
+like-minded people. Maybe you think about starting a blog or want to change
+your writing workflow. Choosing a framework for blogging can be a hard task.
+There are plenty of options and each has it's strengths and flaws. This is a
+short excerpt of my story using a framework called Zola.</p>
+<span id="continue-reading"></span><h1 id="static-site-generation">Static site generation</h1>
+<p>It has been a while that I want to start a blog about all kinds of things and
+now finally you can read my first published post. The probably most used
+platform for small websites is WordPress. After having gained some experience
+with it I am tempted to try a different approach: static site generation. The
+main difference here is, that you basically write your content on a local
+machine, then you run a program which generates the website from that content.
+When the content lives in a repo on GitHub, continuous integration and <a href="https://pages.github.com/">GitHub
+Pages</a> simplify the publishing workflow of your
+website.</p>
+<div style="overflow-x:auto;">
+<table><thead><tr><th></th><th>WordPress</th><th>Static site generator</th></tr></thead><tbody>
+<tr><td><strong>Setup</strong></td><td>Very easy on WordPress.com</td><td>More work necessary</td></tr>
+<tr><td><strong>Editing</strong></td><td>Through web interface</td><td>Markdown files</td></tr>
+<tr><td><strong>Server-Capabilities</strong></td><td>Database and PHP necessary</td><td>Only static files</td></tr>
+</tbody></table>
+</div>
+<p>The free hosting on GitHub Pages without advertisement and writing content in
+Markdown is a big plus for me. The most established framework is
+<a href="https://jekyllrb.com/">Jekyll</a>. Since I am curious on what existed in the
+<a href="https://www.rust-lang.org/">Rust</a> world and found two projects:
+<a href="https://cobalt-org.github.io/">Coblat</a> and <a href="https://www.getzola.org/">Zola</a>.
+To have a good-looking website right from the beginning it is nice to have some
+predefined theming options available. I couldn't find a way to easily theme
+Cobalt, so I choose Zola.  There are plenty of options in their
+<a href="https://www.getzola.org/themes/">showcase</a>.</p>
+<h1 id="zola-with-deepthought">Zola with DeepThought</h1>
+<p>After having <a href="https://www.getzola.org/documentation/getting-started/installation/">Zola
+installed</a>
+it is used through its CLI. Start a new Zola project in a directory called
+<code>myblog</code> by running:</p>
+<pre><code>zola init myblog
+</code></pre>
+<p>Zola will ask you some questions and depending on the answers it will populate
+the configuration file <code>conifg.toml</code>. If you don't know what to choose, you can
+go with the defaults by just pressing enter. I recommend using git for version
+control, so we have to initialize a repository:</p>
+<pre><code>cd myblog
+git init
+</code></pre>
+<p>To use a theme we have to clone it inside the <code>themes</code> directory. I will use
+the <em>DeepThought</em> theme. <em>(note that <code>git submodule</code> requires the parent to be
+a git directory.)</em></p>
+<pre><code>cd themes
+git submodule add https:&#x2F;&#x2F;github.com&#x2F;RatanShreshtha&#x2F;DeepThought
+cd ..  # Back in myblog directory
+</code></pre>
+<p>To get started we have to adjust our <code>config.toml</code>, which is located in
+<code>myblog</code>. In the Zola docs you will find <a href="https://www.getzola.org/documentation/getting-started/configuration/">general
+information</a>
+about the configuration. Our theme requires some extra configuration which is
+documented <a href="https://deepthought-theme.netlify.app/docs/config-options/">here</a>.
+We need to make the following changes:</p>
+<ul>
+<li>
+<p>Add theme:</p>
+<pre><code>theme = &quot;DeepThought&quot;
+</code></pre>
+</li>
+<li>
+<p>Add taxonomies (<a href="https://www.getzola.org/documentation/content/taxonomies/">more
+info</a>)</p>
+<pre><code>taxonomies = [
+  { name = &quot;categories&quot;, feed = true, paginate_by = 10 },
+  { name = &quot;tags&quot;, fees = true, paginate_by = 10 },
+]
+</code></pre>
+</li>
+<li>
+<p>Add a minimal amount of configuration to the extras section to make the
+website work with our theme. Put this code block after <code>[extras]</code>:</p>
+<pre><code>navbar_items = [
+    { code = &quot;en&quot;, nav_items = [
+        { url = &quot;$BASE_URL&#x2F;&quot;, name = &quot;Home&quot; },
+        { url = &quot;$BASE_URL&#x2F;posts&quot;, name = &quot;Posts&quot; },
+        { url = &quot;$BASE_URL&#x2F;tags&quot;, name = &quot;Tags&quot; },
+        { url = &quot;$BASE_URL&#x2F;categories&quot;, name = &quot;Categories&quot; },
+    ] },
+]
+
+[extra.author]
+name = &quot;DeepThought&quot;
+avatar = &quot;&#x2F;images&#x2F;avatar.png&quot;
+
+[extra.social]
+</code></pre>
+</li>
+</ul>
+<p>The final <code>config.toml</code> should look similar to <a href="config.toml">this</a> (ordering
+can matter).</p>
+<p>Now we need to add some content:</p>
+<pre><code># in myblog directory
+mkdir content&#x2F;posts
+cp themes&#x2F;DeepThought&#x2F;content&#x2F;_index.md content&#x2F;
+cp themes&#x2F;DeepThought&#x2F;content&#x2F;posts&#x2F;post-0.md content&#x2F;posts&#x2F;
+cp themes&#x2F;DeepThought&#x2F;content&#x2F;posts&#x2F;_index.md content&#x2F;posts&#x2F;
+</code></pre>
+<p>Now we are done and can serve our website:</p>
+<pre><code>zola serve
+</code></pre>
+<p>Open the browser on the address specified by the output of the command
+(something like <a href="http://127.0.0.1:1111">http://127.0.0.1:1111</a> and you should see this:</p>
+<p><img src="zola-website-screenshot.png" alt="Screenshot" /></p>
+<p>Congratulations! Feel free to adjust your configuration and add some more
+content. You can use <code>content/posts/post-0.md</code> as a starting point. The <a href="https://www.getzola.org/documentation/">Zola
+Docs</a> contain a lot of useful
+information. Enjoy!</p>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;d2weber.github.io&#x2F;DougTyped&#x2F;posts&#x2F;dotfiles-under-control&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Dotfiles under control
+            </a>
+          </div>
+             
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  <script src="https://d2weber.github.io/DougTyped/search_index.en.js"></script>
+  <script src="https://d2weber.github.io/DougTyped/js/site.js"></script>
+
+  
+
+
+
+
+</body>
+
+</html>

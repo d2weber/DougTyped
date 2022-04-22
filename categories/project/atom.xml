@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>DougTyped - Project</title>
+	<subtitle>A space for all kinds of things.</subtitle>
+	<link href="https://d2weber.github.io/DougTyped/categories/project/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://d2weber.github.io/DougTyped"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-11-10T00:00:00+00:00</updated>
+	<id>https://d2weber.github.io/DougTyped/categories/project/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Starting a blog with Zola</title>
+		<published>2021-11-10T00:00:00+00:00</published>
+		<updated>2021-11-10T00:00:00+00:00</updated>
+		<link href="https://d2weber.github.io/DougTyped/posts/starting-a-blog-with-zola/" type="text/html"/>
+		<id>https://d2weber.github.io/DougTyped/posts/starting-a-blog-with-zola/</id>
+		<content type="html">&lt;p&gt;A blog is a great way to reflect on thoughts and to get in touch with
+like-minded people. Maybe you think about starting a blog or want to change
+your writing workflow. Choosing a framework for blogging can be a hard task.
+There are plenty of options and each has it&#x27;s strengths and flaws. This is a
+short excerpt of my story using a framework called Zola.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h1 id=&quot;static-site-generation&quot;&gt;Static site generation&lt;&#x2F;h1&gt;
+&lt;p&gt;It has been a while that I want to start a blog about all kinds of things and
+now finally you can read my first published post. The probably most used
+platform for small websites is WordPress. After having gained some experience
+with it I am tempted to try a different approach: static site generation. The
+main difference here is, that you basically write your content on a local
+machine, then you run a program which generates the website from that content.
+When the content lives in a repo on GitHub, continuous integration and &lt;a href=&quot;https:&#x2F;&#x2F;pages.github.com&#x2F;&quot;&gt;GitHub
+Pages&lt;&#x2F;a&gt; simplify the publishing workflow of your
+website.&lt;&#x2F;p&gt;
+&lt;div style=&quot;overflow-x:auto;&quot;&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;WordPress&lt;&#x2F;th&gt;&lt;th&gt;Static site generator&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Setup&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Very easy on WordPress.com&lt;&#x2F;td&gt;&lt;td&gt;More work necessary&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Editing&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Through web interface&lt;&#x2F;td&gt;&lt;td&gt;Markdown files&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Server-Capabilities&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td&gt;Database and PHP necessary&lt;&#x2F;td&gt;&lt;td&gt;Only static files&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The free hosting on GitHub Pages without advertisement and writing content in
+Markdown is a big plus for me. The most established framework is
+&lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt;. Since I am curious on what existed in the
+&lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;Rust&lt;&#x2F;a&gt; world and found two projects:
+&lt;a href=&quot;https:&#x2F;&#x2F;cobalt-org.github.io&#x2F;&quot;&gt;Coblat&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;.
+To have a good-looking website right from the beginning it is nice to have some
+predefined theming options available. I couldn&#x27;t find a way to easily theme
+Cobalt, so I choose Zola.  There are plenty of options in their
+&lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;&quot;&gt;showcase&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;zola-with-deepthought&quot;&gt;Zola with DeepThought&lt;&#x2F;h1&gt;
+&lt;p&gt;After having &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;Zola
+installed&lt;&#x2F;a&gt;
+it is used through its CLI. Start a new Zola project in a directory called
+&lt;code&gt;myblog&lt;&#x2F;code&gt; by running:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;zola init myblog
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Zola will ask you some questions and depending on the answers it will populate
+the configuration file &lt;code&gt;conifg.toml&lt;&#x2F;code&gt;. If you don&#x27;t know what to choose, you can
+go with the defaults by just pressing enter. I recommend using git for version
+control, so we have to initialize a repository:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;cd myblog
+git init
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To use a theme we have to clone it inside the &lt;code&gt;themes&lt;&#x2F;code&gt; directory. I will use
+the &lt;em&gt;DeepThought&lt;&#x2F;em&gt; theme. &lt;em&gt;(note that &lt;code&gt;git submodule&lt;&#x2F;code&gt; requires the parent to be
+a git directory.)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;cd themes
+git submodule add https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;RatanShreshtha&amp;#x2F;DeepThought
+cd ..  # Back in myblog directory
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To get started we have to adjust our &lt;code&gt;config.toml&lt;&#x2F;code&gt;, which is located in
+&lt;code&gt;myblog&lt;&#x2F;code&gt;. In the Zola docs you will find &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;configuration&#x2F;&quot;&gt;general
+information&lt;&#x2F;a&gt;
+about the configuration. Our theme requires some extra configuration which is
+documented &lt;a href=&quot;https:&#x2F;&#x2F;deepthought-theme.netlify.app&#x2F;docs&#x2F;config-options&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.
+We need to make the following changes:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add theme:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;theme = &amp;quot;DeepThought&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Add taxonomies (&lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;content&#x2F;taxonomies&#x2F;&quot;&gt;more
+info&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;taxonomies = [
+  { name = &amp;quot;categories&amp;quot;, feed = true, paginate_by = 10 },
+  { name = &amp;quot;tags&amp;quot;, fees = true, paginate_by = 10 },
+]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a minimal amount of configuration to the extras section to make the
+website work with our theme. Put this code block after &lt;code&gt;[extras]&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;navbar_items = [
+    { code = &amp;quot;en&amp;quot;, nav_items = [
+        { url = &amp;quot;$BASE_URL&amp;#x2F;&amp;quot;, name = &amp;quot;Home&amp;quot; },
+        { url = &amp;quot;$BASE_URL&amp;#x2F;posts&amp;quot;, name = &amp;quot;Posts&amp;quot; },
+        { url = &amp;quot;$BASE_URL&amp;#x2F;tags&amp;quot;, name = &amp;quot;Tags&amp;quot; },
+        { url = &amp;quot;$BASE_URL&amp;#x2F;categories&amp;quot;, name = &amp;quot;Categories&amp;quot; },
+    ] },
+]
+
+[extra.author]
+name = &amp;quot;DeepThought&amp;quot;
+avatar = &amp;quot;&amp;#x2F;images&amp;#x2F;avatar.png&amp;quot;
+
+[extra.social]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The final &lt;code&gt;config.toml&lt;&#x2F;code&gt; should look similar to &lt;a href=&quot;config.toml&quot;&gt;this&lt;&#x2F;a&gt; (ordering
+can matter).&lt;&#x2F;p&gt;
+&lt;p&gt;Now we need to add some content:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;# in myblog directory
+mkdir content&amp;#x2F;posts
+cp themes&amp;#x2F;DeepThought&amp;#x2F;content&amp;#x2F;_index.md content&amp;#x2F;
+cp themes&amp;#x2F;DeepThought&amp;#x2F;content&amp;#x2F;posts&amp;#x2F;post-0.md content&amp;#x2F;posts&amp;#x2F;
+cp themes&amp;#x2F;DeepThought&amp;#x2F;content&amp;#x2F;posts&amp;#x2F;_index.md content&amp;#x2F;posts&amp;#x2F;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we are done and can serve our website:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;zola serve
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Open the browser on the address specified by the output of the command
+(something like &lt;a href=&quot;http:&#x2F;&#x2F;127.0.0.1:1111&quot;&gt;http:&#x2F;&#x2F;127.0.0.1:1111&lt;&#x2F;a&gt; and you should see this:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;zola-website-screenshot.png&quot; alt=&quot;Screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Congratulations! Feel free to adjust your configuration and add some more
+content. You can use &lt;code&gt;content&#x2F;posts&#x2F;post-0.md&lt;&#x2F;code&gt; as a starting point. The &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;&quot;&gt;Zola
+Docs&lt;&#x2F;a&gt; contain a lot of useful
+information. Enjoy!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

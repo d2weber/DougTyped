@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://d2weber.github.io/DougTyped/sitemap.xml
